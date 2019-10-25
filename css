@@ -1,126 +1,104 @@
 body {
-    font-family: Roboto;
-    background: #8E0E00;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #8E0E00, #1F1C18);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #8E0E00, #1F1C18);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #04A1BF;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
-#container {
-    height: 525px;
-    width: 360px;
-    margin: 100px auto;
-    background: #f7f7f7;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
+.intro {
+    margin: 30px 0px;
+    font-weight: bold;
 }
 
 h1 {
-    background: #1F030C;
-    color: white;
-    margin: 0;
-    padding: 10px 100px;
+    color: #ffffff;
     text-transform: uppercase;
-    font-size: 18px;
-    font-weight: normal;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    font-weight: 800;
 }
 
 p {
-    padding-left: 20px;
+    font-weight: 600;
 }
 
-form input[type="text"] {
-    width=90px;
+#first {
+    margin-top: 10px;
+    color: #FFCD5D;
+}
+
+#second {
+    color: #51DF70;
+}
+
+#third {
+    color: #025F70;
+    margin-bottom: 30px;
+}
+
+#enter {
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #04A1BF;
+    background-color: #025F70;
+    transition: all 0.75s ease;
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75 ease;
+    font-weight: normal;
+}
+
+#enter:hover {
+    background-color: #02798F;
+    color: #FFCD5D;
+}
+
+ul {
+    text-align: left;
+    margin-top: 20px;
+}
+
+li {
+    list-style: none;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 600;
+    border: 2px solid #025f70;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: #4EB9CD;
+    transition: all 0.75s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5 ease;
+}
+
+li:hover {
+    background: #76CFE0;
+}
+
+li>button {
+    font-weight: normal;
+    background: none;
+    border: none;
+    float: right;
+    color: #025f70;
+    font-weight: 800;
 }
 
 input {
-    padding-left: 20px;
-}
-
-#billamt {
-    font-size: 14px;
-    /*color: #2980b9;*/
-    color: #red;
-    background-color: #f7f7f7;
-    width: 60%;
-    padding: 5px 5px 8px 8px;
-}
-
-#billamt:focus {
-    background: #fff;
-    border: 3px solid #2980b9;
-    outline: none;
-}
-
-#peopleamt {
-    width: 60%;
-    padding: 5px 5px 8px 8px;
-    margin-left: 20px;
-    color: #red;
-    background-color: #f7f7f7;
-    font-size: 14px;
-}
-
-.dollarSign {
-    display: inline;
-}
-
-#serviceQual {
-    padding: 13px 13px 20px 20px;
-    margin-left: 20px;
-    font-size: 25px;
-}
-
-button {
-    text-transform: uppercase;
-    font-weight: bold;
-    display: block;
-    margin: 30px auto;
-    background: #AD133A;
     border-radius: 5px;
-    width: 200px;
-    height: 50px;
-    font-size: 17px;
-    color: white;
+    min-width: 65%;
+    padding: 5px;
+    border: none;
 }
 
-button:hover {
-    background: #4c2827;
-    border-bottom-color: #111;
+.done {
+    background: #51DF70 !important;
+    color: #00891E;
 }
 
-button:active {
-    position: relative;
-    top: 1px;
-}
-
-#totalTip {
-    font-size: 30px;
-    margin-top: 5px;
-    text-align: center;
-}
-
-#totalTip:before {
-    content: "Tip amount";
-    font-size: 20px;
-    font-weight: bold;
-    display: block;
-    text-transform: uppercase;
-}
-
-#totalTip sup {
-    font-size: 20px;
-    top: -18px;
-}
-
-#totalTip small {
-    font-size: 20px;
-    font-weight: bold;
-    display: block;
+.delete {
+    display: none;
 }
